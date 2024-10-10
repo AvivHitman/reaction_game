@@ -6,4 +6,4 @@ export const Home = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top:100px`
+  margin-top:70px`

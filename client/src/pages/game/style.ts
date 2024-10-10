@@ -18,9 +18,6 @@ export const Score = styled.div`
     font-size: 24px;
 `;
 
-export const Screen = styled.div`
-    margin-top: 50px;
-`
 export const Container = styled.div`
     position: relative;
     height: 300px;

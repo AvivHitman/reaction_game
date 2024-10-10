@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import * as S from "./style";
 import { GameState, IndicatorPosition, positionKeyMap } from '../../types';
 
-
 interface Props {
     onFeedback: (feedback: GameState) => void;
 }

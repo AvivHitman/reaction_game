@@ -1,6 +1,5 @@
 import UserService from "../services/user.service.js"
 
-
 const createUser = async (req, res) => {
     const { name, score } = req.body;
 

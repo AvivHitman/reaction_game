@@ -1,15 +1,14 @@
 import { useState } from 'react';
+import axios from 'axios';
 import Waiting from './Waiting';
 import Game from './Game';
 import { useLocation, useNavigate } from 'react-router-dom';
 import * as S from "./style";
 import { GameState, stateFeedbackMap } from '../../types';
 import Timer from '../../components/timer/Timer';
-import axios from 'axios';
 
-const URl = "http://localhost:8080/api/users";
+const URL = "http://localhost:8080/api/users";
 const TIMER_SECONDS = 30;
-
 
 const GameLobby = () => {
     const location = useLocation();
@@ -43,7 +42,7 @@ const GameLobby = () => {
         setGameOver(true);
         setFeedback(null);
         try {
-            await axios.post(`${URl}/create`, {
+            await axios.post(`${URL}/create`, {
                 name: userName,
                 score: score.toString(),
             });
