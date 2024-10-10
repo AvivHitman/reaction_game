@@ -3,9 +3,8 @@ import * as dotenv from "dotenv";
 import userRoutes from "./routes/user.route.js"
 import cors from "cors"
 
-
-const port = process.env.APP_PORT || 8080;
 dotenv.config();
+const port = process.env.APP_PORT || 8080;
 const app = express();
 app.use(express.json());
 app.use(cors());
